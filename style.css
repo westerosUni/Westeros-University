@@ -1,0 +1,244 @@
+#home-page {
+    background-image: url("img/background.png");
+    min-height: 100vh;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    #home-page {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+}
+@media (max-width: 768px) {
+    .page-background {
+        background-attachment: scroll;
+    }
+}
+body {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+}
+.page-background {
+    background-image: url("img/Sfondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.titolo{
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-size: 100px;
+    font-variant: small-caps;
+    color: #d4bf6c;
+}
+
+@media (max-width: 768px) {
+    .titolo {
+        font-size: 80px;
+    }
+    .citazione {
+        font-size: 25px !important;
+    }
+    .contenuto {
+        font-size: 18px !important;
+        width: 85% !important;
+        margin: 0 auto;
+    }
+    .stemma{
+        width: 400px !important;
+    }
+}
+
+.credits{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.titolo_sez{
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-size: 70px;
+    font-variant: small-caps;
+    color: #d4bf6c;
+}
+.contattaci{
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-size: 40px;
+    font-variant: small-caps;
+    color: #ffffff;
+}
+.sottotitolo_sez{
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+    font-variant: small-caps;
+    color: #ffffff;    
+}
+.citazione{
+    font-family: 'Lora';
+    font-weight: bold;
+    font-size: 35px;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #e5d3b3;
+}
+.contenuto{
+    font-family: 'Lora';
+    font-size: 20px;
+}
+.stemma{
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.title-font {
+    font-family: 'Cinzel', serif;
+    color: #ffffff !important;
+}
+.thick-bar {
+    width: 110px;
+    height: 6px;
+    background: #d4bf6c;
+    margin: 0 auto 20px auto;
+}
+.thin-bar {
+    width: 330px;
+    height: 2px;
+    background: #FFECB3;
+    margin: 0 auto 20px auto;
+}
+.houses-grid {
+    width: 100%;
+    height: calc(100vh - 90px);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+.house-card:nth-child(1),
+.house-card:nth-child(3) {
+    justify-self: start;
+    margin-left: -100px;
+}
+
+.house-card:nth-child(2),
+.house-card:nth-child(4) {
+    justify-self: end;
+    margin-right: -100px;
+}
+.house-card {
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+.house-card img {
+    width: min(35vw, 650px);
+    height: auto;
+    filter:
+        drop-shadow(0 0 10px #f7da93);
+}
+.house-card:hover img {
+    transform: scale(1.08);
+
+    filter:
+        drop-shadow(0 0 10px #fbd678)
+        drop-shadow(0 0 25px #fad26c)
+        drop-shadow(0 0 40px #fcd060);
+}
+
+.house-name {
+    position: absolute;
+    bottom: 20px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+
+    opacity: 1;
+    transition: .3s;
+}
+
+.house-name {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+
+    opacity: 1;
+    transition: .4s;
+}
+
+.house-card:hover .house-name {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+
+    .houses-grid {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        gap: 15px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .house-card:nth-child(1),
+    .house-card:nth-child(2),
+    .house-card:nth-child(3),
+    .house-card:nth-child(4) {
+        margin: 0;
+        justify-self: center;
+    }
+
+    .house-card {
+        flex-direction: column;
+    }
+
+    .house-card img {
+        width: 250px !important;
+        max-width: 100%;
+    }
+
+    .house-name {
+        opacity: 1;
+        position: static;
+        transform: none;
+        margin-top: 8px;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+
+    .relative {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .houses-grid {
+        order: 2;
+        height: auto;
+    }
+
+    .md\:absolute {
+        order: 1;
+    }
+}

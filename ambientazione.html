@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Westeros University - LARP</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        
+        <!-- CSS FILE -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="page-background text-zinc-200">
+
+        <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
+    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="img/Westeros University.png" alt="Logo" class="h-10">
+                <div>
+                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+                </div>
+            </div>
+            <!-- Contenuto Barra -->
+            <div class="idden md:flex gap-12 text-lg font-semibold">
+                <a href="index.html" class="hover:text-amber-400 transition">HOME</a>
+                <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
+                <a href="ambientazione.html" class="text-amber-200">AMBIENTAZIONE</a>
+                <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
+                <a href="club.html" class="hover:text-amber-400 transition">CLUB</a>
+            </div>
+            
+            <!-- Tasti -->
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white text-3xl">
+                    ☰
+                </button>
+                <button id="open-contact-drawer" 
+                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
+                    <span>CONTATTACI</span>
+                </button>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
+                    ISCRIVITI
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div id="mobile-menu"
+     class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
+
+    <div class="flex flex-col text-center">
+
+        <a href="index.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            HOME
+        </a>
+
+        <a href="info.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            INFO PRATICHE
+        </a>
+
+        <a href="ambientazione.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            AMBIENTAZIONE
+        </a>
+
+        <a href="confraternite.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            CONFRATERNITE
+        </a>
+
+        <a href="club.html"
+           class="py-4">
+            CLUBS
+        </a>
+
+    </div>
+</div>
+        <div id="drawer-container"></div>
+        <div class="flex items-center justify-center pointer-events-none">
+        
+        <div class="text-center max-w-4xl px-6">
+            <br><br><br>
+            
+            <h1 class="titolo_sez">
+                Preparatevi alle Elezioni
+            </h1>
+
+<img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">            <p class="contenuto">
+
+                Le confraternite si contendono prestigio e influenza tra le mura della Westeros University.
+
+Si stringono alleanze, si consumano rivalità, si inseguono ambizioni destinate a lasciare il segno.
+
+I candidati si preparano alla competizione, pronti a dimostrare il proprio valore davanti all'intero campus.
+
+Ogni voto può cambiare gli equilibri dell'accademia. Ogni scelta può determinare chi guiderà il futuro.
+
+Mentre la corsa per il Concilio Studentesco entra nel vivo, nessuno può permettersi di restare a guardare.
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">             
+            <h1 class="citazione">Westers the UNI</h1><br>
+            <p class="contenuto">La Westeros University è l’accademia più rinomata del Paese, celebre per aver formato intere generazioni di studenti impeccabili sotto la guida istituzionale della Preside, la professoressa Argella Baratheon.<br><br>
+Dietro la facciata di rigore e di eccellenza, tuttavia, l’accademia è stata a lungo condizionata dalla forte influenza della confraternita dei Targaryen. Una potenza sociale ed economica tale da costringere la stessa amministrazione a scendere a compromessi, chiudendo un occhio sulle voci che ruotavano attorno al campus, tutt’ora ignote.<br>
+Il delicato equilibrio si ruppe definitivamente quando, dopo uno dei grandi festini privati organizzati dalla confraternita un giovane studente appartenente alla confraternita dei Greyjoy smise improvvisamente di partecipare alle lezioni e abbandonò gli studi.<br>
+Nello stesso momento, la confraternita dei Targaryen sparì misteriosamente senza lasciare traccia.<br><br>
+Sono passati nove anni da quegli strani eventi, ed oggi è il momento del cambio di concilio, cosa che avviene ogni 3 anni.<br>
+In occasione di questo evento, le confraternite si ritrovano per una giornata di attività. Ogni attività fornirà dei punti alle rispettive confraternite.<br>
+La confraternita che detiene il punteggio maggiore al termine della giornata, prenderà possesso del consiglio studentesco e aiuterà la preside nelle decisioni per i successivi 3 anni.</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">             
+            <h1 class="citazione">Westers the UNI</h1><br>
+            <p class="contenuto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero enim maiores deserunt amet corporis aperiam repellendus mollitia, hic unde beatae dolorum. Voluptatum optio accusantium beatae nam? Consequuntur, sed eveniet.</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">             
+            <h1 class="citazione">Stile di Gioco</h1>
+            <h2 class="sottotitolo_sez">"Scelgo i miei alleati con attenzione e i nemici con più attenzione ancora."</h2>
+            <br><p class="contenuto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero enim maiores deserunt amet corporis aperiam repellendus mollitia, hic unde beatae dolorum. Voluptatum optio accusantium beatae nam? Consequuntur, sed eveniet.</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">             
+            <div id="LARP">
+            <h1 class="titolo_sez">Cos'è un LARP?</h1>
+            <p class="contenuto">Il LARP (acronimo di Live Action role Play, o Gioco di Ruolo dal Vivo) è un'attività esperienziale che permette a chi la pratica di immedesimarsi nelle vicende, ma soprattutto nelle emozioni, del personaggio che interpreta all'interno di una storia. L’interprete non avrà un copione da recitare, ma un personaggio da rendere vivo e vero all’interno delle vicende messe in atto dagli organizzatori, rispondendo liberamente alle azioni degli altri personaggi.</p>
+            <br>
+            <p class="contenuto">Il Crepuscolo degli Dèi è un evento corale non competitivo, un racconto epico che i giocatori faranno vivere grazie alle proprie scelte, contribuendo a delineare la storia e definendo, con i propri gesti, chi e come uscirà vincitore o sconfitto dallo scontro con il Destino.
+Il focus di questo evento sarà sulle emozioni, i drammi e le tragedie di un popolo orgoglioso consapevole di vivere il tramonto della propria epoca, il momento in cui i sogni personali si infrangeranno contro la realtà e il futuro sarà solo degli Eroi.
+
+Il Crepuscolo degli Dèi è un evento che vuole porre l'accento su due forti tematiche, l'epica e la tragedia, che gli autori visualizzano come le "radici" del fantasy moderno, una sua versione primordiale, forse addirittura "pura". In questo evento, non saranno protagonisti i principi e la loro politica fatta di soldati e denaro, bensì degli Eroi: donne e uomini, in balia delle trame del Destino, che con coraggio e orgoglio cercano di opporsi ad un futuro che sembra ormai scritto, tra ancestrali faide di sangue, canzoni di gloria e misteriose profezie.</p>
+</div>            
+<br><br><br><br><br>
+    </body>
+    <script src="app.js"></script>
+</html>

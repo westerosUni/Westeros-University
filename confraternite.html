@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Westeros University - LARP</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        
+        <!-- CSS FILE -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="page-background text-zinc-200">
+
+        <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
+    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="img/Westeros University.png" alt="Logo" class="h-10">
+                <div>
+                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+                </div>
+            </div>
+            <!-- Contenuto Barra -->
+            <div class="idden md:flex gap-12 text-lg font-semibold">
+                <a href="index.html" class="hover:text-amber-400 transition">HOME</a>
+                <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
+                <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
+                <a href="confraternite.html" class="text-amber-200">CONFRATERNITE</a>
+                <a href="club.html" class="hover:text-amber-400 transition">CLUB</a>
+            </div>
+            
+            <!-- Tasti -->
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white text-3xl">
+                    ☰
+                </button>
+                <button id="open-contact-drawer" 
+                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
+                    <span>CONTATTACI</span>
+                </button>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
+                    ISCRIVITI
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div id="mobile-menu"
+     class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
+
+    <div class="flex flex-col text-center">
+
+        <a href="index.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            HOME
+        </a>
+
+        <a href="info.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            INFO PRATICHE
+        </a>
+
+        <a href="ambientazione.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            AMBIENTAZIONE
+        </a>
+
+        <a href="confraternite.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            CONFRATERNITE
+        </a>
+
+        <a href="club.html"
+           class="py-4">
+            CLUBS
+        </a>
+
+    </div>
+</div>
+        <div id="drawer-container"></div>
+        <div class="flex items-center justify-center pointer-events-none">
+        
+        <div class="text-center max-w-4xl px-6">
+            <br><br><br>
+            
+            <h1 class="titolo">
+                Stark
+            </h1>
+            <img src="img/Stark Stemma.png" class="stemma" alt="Stark Logo"><br>
+            <p class="citazione">"L'inverno sta arrivando"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+                Onorevoli, austeri, studenti modello, padroni di voi stessi: vi preoccupate del futuro senza mai dimenticare il passato. Questo è ciò che rappresentate, voi, confraternita degli Stark.
+Siete tra le famiglie fondatrici dell’Università, ne conoscete il passato e vi preoccupate per il suo futuro. Sapete bene come alcune decisioni possano compromettere la reputazione dell’ateneo e la vita degli studenti. Temete che la guida dell’istituto venga affidata a una persona che non rispetti la sua storia e che desideri riscrivere il passato.
+In quest’ultimo anno scolastico avete avuto un brutto presentimento, come se qualcosa di negativo stesse per accadere.
+
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+            <h1 class="titolo">
+                Lannister
+            </h1>
+            <img src="img/Lannister Stemma.png" class="stemma" alt="Lannister Logo"><br>
+            <p class="citazione">"Ascolta il mio Ruggito"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt=" Logo">
+
+            <p class="contenuto">
+Siete i Lannister; l’ambizione è di casa. Sapete che il vostro posto è al vertice della comunità universitaria. Volete conquistare ogni posizione di potere all’interno dell’istituto; se non foste studenti, puntereste persino al ruolo di preside.
+Non vi mancano soldi; siete la confraternita più ricca, le vostre feste sono le migliori e gli investimenti delle vostre famiglie all’università sono sempre importanti. Spesso utilizzate la vostra ricchezza per uscire dai guai.
+Chiunque si frappone tra voi e la vostra ambizione è un ostacolo da rimuovere; voi siete i migliori e nessuno può competere con voi. Per voi, tutto è lecito pur di ottenere potere. 
+Siete pronti a distruggere socialmente chiunque osi considerarsi vostro pari o addirittura superiore
+Per voi riveste grande importanza l’apparenza prestigiosa della vostra confraternita e fareste qualsiasi cosa pur di mantenerla in questo modo.
+            </p><br>
+
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <h1 class="titolo">
+                Baratheon
+            </h1>
+            
+            <img src="img/Baratheon Stemma.png" class="stemma" alt="Baratheon Logo"><br>
+
+            <p class="citazione">"Nostra è la Furia"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+Voi siete i Baratheon, forti, rumorosi e impulsivi.
+Ovunque andiate vi fate notare. Siete l’anima delle feste, dei tornei sportivi e di qualsiasi evento universitario. Se c’è da organizzare qualcosa di grande, probabilmente siete già stati coinvolti.
+A volte vi fate distrarre dalle vostre responsabilità per dedicarvi a ciò che amate davvero che sia lo sport o qualsiasi altra attività vi appassioni.
+Questo non significa che siete irresponsabili. Quando la situazione lo richiede, sapete prendere in mano le redini e agire con decisione. 
+Molti vi considerano superficiali, convinti che pensiate solo a divertirvi ma voi sapete che si sbagliano. Certo, la vita universitaria va goduta fino in fondo, ma quando arriva il momento della sfida, nessuno può eguagliare la vostra determinazione.
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <h1 class="titolo">
+                Greyjoy
+            </h1>
+            <img src="img/Greyjoy Stemma 1.png" class="stemma" alt="Greyjoy Logo"><br>
+            <p class="citazione">"Noi non seminiamo"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+Siete a malapena una confraternita; non rispettate le autorità. Per raggiungere i vostri obiettivi personali, siete pronti a mentire, minacciare e persino a ribellarvi all'autorità della confraternita. Non vi preparate per nessun esame, e tutto ciò di cui avete bisogno lo prendete. 
+Non vi importa dell'università. Per voi, se c’è una via facile per raggiungere ciò che desiderate, è sicuro che la percorrerete.
+Se uno della vostra confraternita si dimostra debole, per voi è come morto. Non potete permettere a un vostro confratello di essere debole. Nessun Greyjoy può mostrare pietà o rimorso; la pena è l’esclusione dalla confraternita.
+Voi volete l’anarchia totale, nessuno dovrebbe comandare sugli altri, il disordine e il caos per voi è la massima espressione di libertà.
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+
+            <h1 class="titolo">
+                Targaryen
+            </h1>
+            <img src="img/Targaryen no sfondo.png" class="stemma" alt="Targaryen Logo">
+            <br>
+            <p class="citazione">"Fuoco e Sangue"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+                Orgogliosi, fieri e determinati.
+                Voi siete qui per diritto di nascita e nessuno può contestarlo. L’Università da quando ne avete memoria è sempre stata diretta da un Targaryen e dunque vi meritate di essere qui e di avere qualche aiuto in più da parte dei professori.
+                Siete diversi dagli altri studenti che frequentano questa Università in ogni modo e non vi vergognate di esserlo.
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <br><br><br><br><br>
+
+        </div>
+
+    </div>
+
+</div>
+    </body>
+    <script src="app.js"></script>
+</html>

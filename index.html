@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westeros University - LARP</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        
+    
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home-page" class="page-background text-zinc-200">
+
+    <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
+    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="img/Westeros University.png" alt="Logo" class="h-10">
+                <div>
+                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+                </div>
+            </div>
+            <!-- Contenuto Barra -->
+            <div class="idden md:flex gap-12 text-lg font-semibold">
+                <a href="#" class="text-amber-200">HOME</a>
+                <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
+                <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
+                <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
+                <a href="club.html" class="hover:text-amber-400 transition">CLUB</a>
+            </div>
+            
+            <!-- Tasti -->
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white text-3xl">
+                    ☰
+                </button>
+                <button id="open-contact-drawer" 
+                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
+                    <span>CONTATTACI</span>
+                </button>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
+                    ISCRIVITI
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="mobile-menu"
+     class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
+
+    <div class="flex flex-col text-center">
+
+        <a href="index.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            HOME
+        </a>
+
+        <a href="info.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            INFO PRATICHE
+        </a>
+
+        <a href="ambientazione.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            AMBIENTAZIONE
+        </a>
+
+        <a href="confraternite.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            CONFRATERNITE
+        </a>
+
+        <a href="club.html"
+           class="py-4">
+            CLUB
+        </a>
+
+    </div>
+</div>
+<div id="drawer-container"></div>
+<div class="relative">
+    <section class="houses-grid">
+
+    <a href="ambientazione.html" class="house-card">
+        <img src="img/Ambientazione.png" alt="Ambientazione">
+        <span class="house-name">Ambientazione</span>
+    </a>
+
+    <a href="confraternite.html" class="house-card">
+        <img src="img/Confraternite.png" alt="Confraternite">
+        <span class="house-name">Confraternite</span>
+    </a>
+
+    <a href="club.html" class="house-card">
+        <img src="img/Gruppi.png" alt="Clubs">
+        <span class="house-name">Club</span>
+    </a>
+
+    <a href="info.html" class="house-card">
+        <img src="img/Info_pratiche.png" alt="Info">
+        <span class="house-name">Info Pratiche</span>
+    </a>
+
+</section>
+<div class="md:absolute md:inset-0 flex flex-col items-center justify-center pointer-events-none">        
+        <div class="bg-black/70 rounded-[160px] border-2 px-12 py-10 max-w-4xl text-center" style="border-color: #d4bf6c">
+
+            <h1 class="title-font text-6xl md:text-7xl font-bold leading-none mb-4 text-white tracking-wider">
+                Westeros University
+            </h1>
+            
+            <div class="thick-bar mx-auto"></div>
+            
+            <p class="citazione" style="color: white;">
+                Le alleanze cambiano. L'ambizione resta.
+            </p>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-4 pointer-events-auto">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-10 py-5 rounded-2xl text-lg font-semibold transition">
+                    ISCRIVITI
+                </a>
+                <a href="ambientazione.html#LARP" class="border-2 border-yellow-200 hover:bg-white/10 px-10 py-5 rounded-2xl text-lg font-semibold transition">
+                    Cos'è un LARP?
+                </a>
+            </div>
+            <p class="contenuto" style="color: white; font-size: 30px;">
+                <br>18/07/2026<br>
+                SAE Institute Milano
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Westeros University - LARP</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+        <!-- CSS FILE -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="page-background text-zinc-200">
+
+        <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
+    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="img/Westeros University.png" alt="Logo" class="h-10">
+                <div>
+                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+                </div>
+            </div>
+            <!-- Contenuto Barra -->
+            <div class="idden md:flex gap-12 text-lg font-semibold">
+                <a href="index.html" class="hover:text-amber-400 transition">HOME</a>
+                <a href="info.html" class="text-amber-200">INFO PRATICHE</a>
+                <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
+                <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
+                <a href="club.html" class="hover:text-amber-400 transition">CLUB</a>
+            </div>
+            
+            <!-- Tasti -->
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white text-3xl">
+                    ☰
+                </button>
+                <button id="open-contact-drawer" 
+                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
+                    <span>CONTATTACI</span>
+                </button>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
+                    ISCRIVITI
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div id="mobile-menu"
+     class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
+
+    <div class="flex flex-col text-center">
+
+        <a href="index.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            HOME
+        </a>
+
+        <a href="info.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            INFO PRATICHE
+        </a>
+
+        <a href="ambientazione.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            AMBIENTAZIONE
+        </a>
+
+        <a href="confraternite.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            CONFRATERNITE
+        </a>
+
+        <a href="club.html"
+           class="py-4">
+            CLUB
+        </a>
+
+    </div>
+</div>
+        <div id="drawer-container"></div>
+<div class="flex items-center justify-center">                
+            <div class="text-center max-w-4xl px-6">
+                <br><br><br>
+                <h1 class="titolo_sez">
+                    Info Pratiche
+                </h1>
+                <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Spacer">
+                <p class="citazione">18/07/2026<br>11:00 - 19:00</p>
+                <p class="citazione">SAE Institue Milano</p>
+                <p class="contenuto">Via Domenico Trentacoste, 14, 20134 Milano</p><br><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1907.673351944042!2d9.240444470664627!3d45.472998017067845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c65d51dc2cad%3A0xec4607b742ded778!2sSAE%20Institute%20Milano!5e0!3m2!1sen!2sit!4v1781965306317!5m2!1sen!2sit"
+                    width="100%"
+                    height="500"
+                    style="border:0;"
+                    loading="lazy">
+                </iframe>
+                <br><p class="citazione">Come Raggiungerci</p>
+                <p class="contenuto"><b>Linee Bus:</b> 54, 39
+                <br><b>Autostrada A51</b> - uscita via Rubattino 7
+                <br><b>Metro:</b> M2 (Verde), fermata Lambrate FS + Bus 39/54 - M4 (Blu) fermata Argonne + Bus 54</p><br><br>
+                <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Spacer">
+
+                <h1 class="citazione">
+                    Cosa fare quando si arriva
+                </h1><br>
+                    <p class="contenuto">Entra dentro la scuola e dirigiti verso l'aula 5, situata al piano terra a destra dall'ingresso, per registrarti. </p>
+                    <br><img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Spacer">
+
+                <h1 class="citazione">
+                    Cosa fare se si è in ritardo
+                </h1><br>
+                    <p class="contenuto">Se per caso arrivate in ritardo e il LARP è già iniziato dirigetevi nella Creative Room, situata al piano terra a sinistra dall'ingresso.<br>Parlate con il membro dello staff di riferimento che vi farà registrare.</p>
+                    <br><img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Spacer">
+
+                <h1 class="citazione">
+                    Costumi
+                </h1><br>
+                    <p class="contenuto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda obcaecati impedit provident voluptatum eos esse a magnam? Nobis quam placeat magnam repellendus, minima totam? Veritatis, tenetur corporis? Ipsam, ullam labore.</p>
+                    <br><img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Spacer">
+
+                <h1 class="citazione">
+                    Crediti
+                </h1><br>
+                    <p class="contenuto">LARP progettato dagli Studenti di SAE del corso di Game Design del Primo Anno:<br>
+                    <b>Regista:</b> Matteo Benassi<br>
+                    <b>Designer:</b> Matteo Benassi, Sofia Cacioli, Antonio Maggi, Federico Negro, Samuele Righetto e Valentino Zappa<br>
+                    Con la guida dei <b>professori:</b> Biancamaria Mori, Luca Bellini e Marco Bielli<br>                        
+                    <b>Web Design:</b> Samuele Righetto e Sofia Cacioli
+                    <br><br><img src="img/sae.png" alt="Logo" class="credits" style="width: 70px;">
+                                         Con il supporto di Terre Spezzate<br></p><br>
+                                         <img src="img/terre_spezzate.png" alt="Logo" class="credits"><br>
+<br><br>
+                </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>

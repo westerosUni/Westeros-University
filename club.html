@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Westeros University - LARP</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        
+        <!-- CSS FILE -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="page-background text-zinc-200">
+
+        <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
+    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="img/Westeros University.png" alt="Logo" class="h-10">
+                <div>
+                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+                </div>
+            </div>
+            <!-- Contenuto Barra -->
+            <div class="idden md:flex gap-12 text-lg font-semibold">
+                <a href="index.html" class="hover:text-amber-400 transition">HOME</a>
+                <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
+                <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
+                <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
+                <a href="club.html" class="text-amber-200">CLUB</a>
+            </div>
+            
+            <!-- Tasti -->
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white text-3xl">
+                    ☰
+                </button>
+                <button id="open-contact-drawer" 
+                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
+                    <span>CONTATTACI</span>
+                </button>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
+                    ISCRIVITI
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+        <div id="mobile-menu"
+     class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
+
+    <div class="flex flex-col text-center">
+
+        <a href="index.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            HOME
+        </a>
+
+        <a href="info.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            INFO PRATICHE
+        </a>
+
+        <a href="ambientazione.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            AMBIENTAZIONE
+        </a>
+
+        <a href="confraternite.html"
+           class="py-4 border-b border-[#d4bf6c]">
+            CONFRATERNITE
+        </a>
+
+        <a href="club.html"
+           class="py-4">
+            CLUBS
+        </a>
+
+    </div>
+</div>
+        <div id="drawer-container"></div>
+        <div class="flex items-center justify-center pointer-events-none">
+        
+        <div class="text-center max-w-4xl px-6">
+            <br><br><br>
+            
+            <h1 class="titolo">
+                Scherma
+            </h1>
+
+            <img src="img/Scherma colrato.png" class="stemma" alt="Stark Logo">
+            <br><p class="citazione">"C'è soltanto una cosa che puoi dire alla Morte:<br>Non oggi"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+                Benvenuti, guerrieri, apprezzatori dell’arte della guerra e duellanti accaniti.<br>
+Nel Club di Scherma vi troverete a vostro agio: combatterete tra di voi e contro gli altri in una serie di schermaglie e duelli.<br>
+Ma non preoccupatevi: chi partecipa vuol dire che ha già esperienza nel combattimento e, per questo, potrà usare ogni arma che troverà; inoltre, rispetto agli altri, la sua scorza dura può prendere più colpi.<br>
+I membri del Club di Scherma combattono sia per l’onore della propria confraternita sia per questioni personali: i duelli portano favori, le schermaglie onore.<br>
+Ma attenzione: rifiutare un duello è una grave onta per questi guerrieri; se però accettano, state pronti a vedervela brutta in un duello a suon di acciaio.
+
+            <br><br><img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+            <h1 class="titolo">
+                Giornalino
+            </h1>
+            
+            <img src="img/Giornalino colorato.png" class="stemma" alt="Lannister Logo">
+            <br><p class="citazione">"Non è facile ammettere a noi stessi quale sia la nostra vera natura."</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+Benvenuti, giornalisti, investigatori e ricercatori della verità.<br>
+Nel Club del Giornale troverete tutte le risposte che cercate, ma la verità è inutile se la sapete solo voi.<br>
+Per questo potrete pubblicare segreti oscuri per sotterrare l’onore delle altre confraternite, mentre la verità ne porterà alla vostra.<br>
+Ma la verità è effimera e sfuggente: dovrete lavorare per scoprire i segreti degli altri studenti e della Westeros University.<br>
+Quindi investigate e parlate: create una rete di informazioni per scoprire tutto quello che c’è da scoprire.<br>
+La verità vi aspetta.
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <h1 class="titolo">
+                Chimica
+            </h1>
+            
+            <img src="img/Chimica colorato.png" class="stemma" alt="Baratheon Logo">
+            <br><p class="citazione">"Loro credono che sia la magia a far vincere le guerre.<br>Questa non è magia, questa è chimica e astuzia."</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+Benvenuti, scienziati, affamati di conoscenze antiche e avvelenatori seriali.<br>
+Nel Club di Chimica sarete nel vostro elemento: grazie a intrugli da voi creati potrete avvelenare, influenzare e curare altri giocatori.<br>
+Ma per fare questo dovrete prima tradurre testi antichi che vi daranno le ormai perdute ricette di queste miscele; il vostro acume vi servirà per crearle, mentre la vostra scaltrezza vi aiuterà a dare uno scopo a queste miscele.<br>
+Per i membri del Club di Chimica le traduzioni sono vere e proprie sfide: chi avrà più acume e sarà più agile mentalmente porterà gloria alla propria confraternita, mentre chi avrà più scaltrezza potrà rallentare i progressi delle altre confraternite e scoprirne i segreti più oscuri.<br>
+            </p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <h1 class="titolo">
+                Dibattito
+            </h1>
+            <img src="img/Dibattito Colorato.png" class="stemma" alt="Greyjoy Logo">
+            <br><p class="citazione">"La conoscenza è potere"</p><br>
+            <img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+
+            <p class="contenuto">
+Benvenuti, politicanti, tiratori di fili e maestri delle parole.<br>
+Nel Club di Dibattito sarete il centro dell’attenzione: vi affronterete in battaglie di carisma discutendo degli ultimi avvenimenti qui alla Westeros University.<br>
+Oltre a discutere, però, avete anche un grande potere che dovrete usare con responsabilità: infatti potrete bloccare per qualche tempo le attività di membri specifici del club, oltre che richiamare l’attenzione su di voi.<br>
+Per i membri del Club di Dibattito le discussioni saranno metro di valutazione: il carisma determina un buon politico, e un buon politico è più propenso a ottenere potere per sé e per la sua confraternita.
+            </p>
+            <br><img src="img/Separatore 1.png" class="mx-auto mb-6" style="width: 500px;" alt="Stark Logo">
+            <br><br><br><br><br>
+
+        </div>
+
+    </div>
+
+</div>
+    </body>
+    <script src="app.js"></script>
+</html>

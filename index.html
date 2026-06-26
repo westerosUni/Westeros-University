@@ -14,42 +14,51 @@
 <body id="home-page" class="page-background text-zinc-200">
 
     <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
-    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="img/Westeros University.png" alt="Logo" class="h-10">
-                <div>
-                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
-                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+        <div class="max-w-[95%] mx-auto px-4 py-3 md:py-4">
+            <div class="flex items-center justify-between">
+                
+                <div class="flex items-center gap-2 md:gap-3">
+                    <img src="img/Westeros University.png" alt="Logo" class="h-8 md:h-12 object-contain">
+                    <div>
+                        <h1 class="title-font text-base md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                        <p class="text-[10px] md:text-xs text-amber-400 tracking-widest -mt-0.5 md:-mt-1">LARP</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex gap-6 xl:gap-12 text-sm xl:text-lg font-semibold">
+                    <a href="#" class="text-amber-200">HOME</a>
+                    <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
+                    <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
+                    <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
+                    <a href="club.html" class="hover:text-amber-400 transition">CLUB</a>
+                </div>
+                
+                <div class="flex items-center gap-2 md:gap-4">
+                    <button id="open-contact-drawer" class="text-xs md:text-base font-semibold hover:text-amber-400 transition flex items-center gap-1">
+                        <span class="hidden sm:inline">CONTATTACI</span>
+                    </button>
+                    
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-4 py-2 md:px-6 md:py-3 rounded-full text-xs md:text-base font-bold transition whitespace-nowrap">
+                        ISCRIVITI
+                    </a>
+
+                    <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl md:text-3xl focus:outline-none p-1">
+                        ☰
+                    </button>
                 </div>
             </div>
-            <!-- Contenuto Barra -->
-            <div class="hidden md:flex gap-12 text-lg font-semibold">
-                <a href="#" class="text-amber-200">HOME</a>
-                <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
-                <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
-                <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
-                <a href="club.html" class="hover:text-amber-400 transition">CLUB</a>
-            </div>
-            
-            <!-- Tasti -->
-            <div class="flex items-center gap-4">
-                <button id="mobile-menu-btn"
-                    class="md:hidden text-white text-3xl">
-                    ☰
-                </button>
-                <button id="open-contact-drawer" 
-                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
-                    <span>CONTATTACI</span>
-                </button>
-                
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
-                    ISCRIVITI
-                </a>
-            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed top-[60px] md:top-[76px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200] max-h-[calc(100vh-76px)] overflow-y-auto">
+        <div class="flex flex-col text-center font-medium text-lg text-white">
+            <a href="index.html" class="py-4 border-b border-[#d4bf6c]/30 hover:bg-zinc-900 transition">HOME</a>
+            <a href="info.html" class="py-4 border-b border-[#d4bf6c]/30 hover:bg-zinc-900 transition">INFO PRATICHE</a>
+            <a href="ambientazione.html" class="py-4 border-b border-[#d4bf6c]/30 hover:bg-zinc-900 transition">AMBIENTAZIONE</a>
+            <a href="confraternite.html" class="py-4 border-b border-[#d4bf6c]/30 hover:bg-zinc-900 transition">CONFRATERNITE</a>
+            <a href="club.html" class="py-4 hover:bg-zinc-900 transition">CLUB</a>
         </div>
     </div>
-</nav>
 <div id="mobile-menu"
      class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
 

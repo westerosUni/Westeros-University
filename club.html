@@ -13,42 +13,44 @@
     <body class="page-background text-zinc-200">
 
         <nav class="bg-black border-b sticky top-0 left-0 right-0 z-[100] will-change-transform" style="border-color: #D4AF37;">
-    <div class="max-w-[95%] mx-auto px-4 py-5 md:px-6 py-3 md:py-4">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="img/Westeros University.png" alt="Logo" class="h-10">
-                <div>
-                    <h1 class="title-font text-sm md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
-                    <p class="text-xs text-amber-400 tracking-widest -mt-1">LARP</p>
+        <div class="max-w-[95%] mx-auto px-4 py-3 md:py-4">
+            <div class="flex items-center justify-between">
+                
+                <div class="flex items-center gap-2 md:gap-3">
+                    <img src="img/Westeros University.png" alt="Logo" class="h-8 md:h-12 object-contain">
+                    <div>
+                        <h1 class="title-font text-base md:text-2xl tracking-wider text-white leading-none">Westeros University</h1>
+                        <p class="text-[10px] md:text-xs text-amber-400 tracking-widest -mt-0.5 md:-mt-1">LARP</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex gap-6 xl:gap-12 text-sm xl:text-lg font-semibold">
+                    <a href="index.html" class="hover:text-amber-400 transition">HOME</a>
+                    <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
+                    <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
+                    <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
+                    <a href="#" class="text-amber-200">CLUB</a>
+                </div>
+                
+                <div class="flex items-center gap-2 md:gap-4">
+                    <button id="open-contact-drawer" class="text-xs md:text-base font-semibold hover:text-amber-400 transition flex items-center gap-1">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+    </svg>
+    <span class="hidden sm:inline">CONTATTACI</span>
+</button>
+                    
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-4 py-2 md:px-6 md:py-3 rounded-full text-xs md:text-base font-bold transition whitespace-nowrap">
+                        ISCRIVITI
+                    </a>
+
+                    <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl md:text-3xl focus:outline-none p-1">
+                        ☰
+                    </button>
                 </div>
             </div>
-            <!-- Contenuto Barra -->
-            <div class="hidden md:flex gap-12 text-lg font-semibold">
-                <a href="index.html" class="hover:text-amber-400 transition">HOME</a>
-                <a href="info.html" class="hover:text-amber-400 transition">INFO PRATICHE</a>
-                <a href="ambientazione.html" class="hover:text-amber-400 transition">AMBIENTAZIONE</a>
-                <a href="confraternite.html" class="hover:text-amber-400 transition">CONFRATERNITE</a>
-                <a href="club.html" class="text-amber-200">CLUB</a>
-            </div>
-            
-            <!-- Tasti -->
-            <div class="flex items-center gap-4">
-                <button id="mobile-menu-btn"
-                    class="md:hidden text-white text-3xl">
-                    ☰
-                </button>
-                <button id="open-contact-drawer" 
-                        class="text-lg font-semibold hover:text-amber-400 transition flex items-center gap-2">
-                    <span>CONTATTACI</span>
-                </button>
-                
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-8 py-3 rounded-full text-lg font-bold transition">
-                    ISCRIVITI
-                </a>
-            </div>
         </div>
-    </div>
-</nav>
+    </nav>
         <div id="mobile-menu"
      class="hidden fixed top-[70px] left-0 w-full bg-black border-b border-[#d4bf6c] z-[200]">
 

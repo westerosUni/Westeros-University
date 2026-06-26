@@ -1,7 +1,14 @@
 #home-page {
     background-image: url("img/background.png");
     min-height: 100vh;
-    overflow: hidden;
+}
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
 }
 @media (max-width: 768px) {
     #home-page {
@@ -112,133 +119,238 @@ body {
     background: #FFECB3;
     margin: 0 auto 20px auto;
 }
-.houses-grid {
-    width: 100%;
-    height: calc(100vh - 90px);
+/* ---------------- HOME ---------------- */
 
-    display: grid;
+.desktop-layout{
 
-    grid-template-columns: 1fr 1fr;
+    display:grid;
 
-    padding: 20px;
+    grid-template-columns:1fr 1.25fr 1fr;
 
-    box-sizing: border-box;
+    grid-template-rows:auto auto;
+
+    align-items:center;
+
+    gap:40px;
+
+    max-width:1800px;
+
+    margin:auto;
+
+    padding:30px;
+    overflow-x: hidden;
 }
-.house-card:nth-child(1),
-.house-card:nth-child(3) {
-    justify-self: start;
-    margin-left: -100px;
+.hero{
+
+    grid-column:2;
+
+    grid-row:1 / span 2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+.hero-box{
+
+    background:rgba(0,0,0,.72);
+
+    border:2px solid #d4bf6c;
+
+    border-radius:70px;
+
+    padding:50px;
+
+    max-width:850px;
+
+    text-align:center;
+}
+.hero-title{
+
+    font-family:'Cinzel';
+
+    font-size:70px;
+
+    color:white;
+
+    margin-bottom:15px;
+}
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+}
+.btn-primary{
+
+    background:#FDE68A;
+
+    color:black;
+
+    padding:18px 38px;
+
+    border-radius:18px;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    transition:.3s;
 }
 
-.house-card:nth-child(2),
-.house-card:nth-child(4) {
-    justify-self: end;
-    margin-right: -100px;
+.btn-primary:hover{
+
+    background:#d4bf6c;
 }
-.house-card {
+.btn-secondary{
 
-    position: relative;
+    border:2px solid #FDE68A;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color:white;
 
-    text-decoration: none;
+    padding:18px 38px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    transition:.3s;
 }
 
+.btn-secondary:hover{
 
-.house-card img {
-    width: min(35vw, 650px);
-    height: auto;
+    background:rgba(255,255,255,.1);
+}
+.sections-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+    align-items:center;
+}
+.section-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    transition:.35s;
+}
+.section-card img{
+
+    width:100%;
+
+    max-width:520px;
+
+    transition:.35s;
+
+    filter:drop-shadow(0 0 12px #d4bf6c);
+}
+.section-card:hover img{
+
+    transform:scale(1.05);
+
     filter:
-        drop-shadow(0 0 10px #f7da93);
+    drop-shadow(0 0 15px #ffe8a2)
+    drop-shadow(0 0 35px #d4bf6c);
 }
-.house-card:hover img {
-    transform: scale(1.08);
+.section-card span{
 
-    filter:
-        drop-shadow(0 0 10px #fbd678)
-        drop-shadow(0 0 25px #fad26c)
-        drop-shadow(0 0 40px #fcd060);
+    margin-top:15px;
+
+    font-size:2rem;
+
+    color:white;
+
+    font-family:'Cinzel';
 }
+.section-card h2{
 
-.house-name {
-    position: absolute;
-    bottom: 20px;
+    margin-top:20px;
 
-    left: 50%;
-    transform: translateX(-50%);
+    color:white;
 
-    color: white;
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
+    font-family:'Cinzel';
 
-    opacity: 1;
-    transition: .3s;
+    font-size:2rem;
 }
+@media(max-width:1100px){
 
-.house-name {
-    position: absolute;
-    color: white;
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
-
-    opacity: 1;
-    transition: .4s;
-}
-
-.house-card:hover .house-name {
-    opacity: 1;
-}
-@media (max-width: 768px) {
-
-    .houses-grid {
-        grid-template-columns: 1fr 1fr;
-        height: auto;
-        gap: 15px;
-        padding: 20px;
-        margin-top: 30px;
+    .desktop-layout{
+        grid-template-columns:1fr;
+        gap:35px;
+        padding:20px;
     }
 
-    .house-card:nth-child(1),
-    .house-card:nth-child(2),
-    .house-card:nth-child(3),
-    .house-card:nth-child(4) {
-        margin: 0;
-        justify-self: center;
+    .hero{
+        grid-column:auto;
+        grid-row:auto;
+        order:1;
+    }
+    .hero-box {
+        padding: 25px 18px;
+        border-radius: 30px;
     }
 
-    .house-card {
-        flex-direction: column;
+    .hero-title {
+        font-size: 38px;
     }
 
-    .house-card img {
-        width: 250px !important;
-        max-width: 100%;
+    .section-card{
+        order:2;
+
+        width:min(500px, 90%);
+        margin:0 auto;
+
+        background:rgba(0,0,0,.65);
+        border:2px solid #d4bf6c;
+        border-radius:30px;
+
+        padding:25px;
+
+        backdrop-filter:blur(4px);
+
+        box-shadow:
+            0 0 20px rgba(212,191,108,.15);
+
+        transition:.3s;
     }
 
-    .house-name {
-        opacity: 1;
-        position: static;
-        transform: none;
-        margin-top: 8px;
-        font-size: 1rem;
-        text-align: center;
-    }
-}
-@media (max-width: 768px) {
+    .section-card:hover{
 
-    .relative {
-        display: flex;
-        flex-direction: column;
+        transform:translateY(-5px);
+
+        box-shadow:
+            0 0 30px rgba(212,191,108,.35);
     }
 
-    .houses-grid {
-        order: 2;
-        height: auto;
+    .section-card img{
+
+        max-width:250px;
+        width:100%;
     }
 
-    .md\:absolute {
-        order: 1;
+    .section-card span{
+
+        margin-top:20px;
+        font-size:1.5rem;
+        text-align:center;
     }
+
 }

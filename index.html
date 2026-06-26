@@ -35,8 +35,11 @@
                 
                 <div class="flex items-center gap-2 md:gap-4">
                     <button id="open-contact-drawer" class="text-xs md:text-base font-semibold hover:text-amber-400 transition flex items-center gap-1">
-                        <span class="hidden sm:inline">CONTATTACI</span>
-                    </button>
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+    </svg>
+    <span class="hidden sm:inline">CONTATTACI</span>
+</button>
                     
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-4 py-2 md:px-6 md:py-3 rounded-full text-xs md:text-base font-bold transition whitespace-nowrap">
                         ISCRIVITI
@@ -92,63 +95,72 @@
     </div>
 </div>
 <div id="drawer-container"></div>
-<div class="relative">
-    <section class="houses-grid">
+<main class="homepage">
 
-    <a href="ambientazione.html" class="house-card">
-        <img src="img/Ambientazione.png" alt="Ambientazione">
-        <span class="house-name">Ambientazione</span>
-    </a>
+    <div class="desktop-layout">
 
-    <a href="confraternite.html" class="house-card">
-        <img src="img/Confraternite.png" alt="Confraternite">
-        <span class="house-name">Confraternite</span>
-    </a>
+        <a href="ambientazione.html" class="section-card ambientazione">
+            <img src="img/Ambientazione.png" alt="">
+            <span>Ambientazione</span>
+        </a>
 
-    <a href="club.html" class="house-card">
-        <img src="img/Gruppi.png" alt="Clubs">
-        <span class="house-name">Club</span>
-    </a>
+        <section class="hero">
 
-    <a href="info.html" class="house-card">
-        <img src="img/Info_pratiche.png" alt="Info">
-        <span class="house-name">Info Pratiche</span>
-    </a>
+            <div class="hero-box">
 
-</section>
-<div class="md:absolute md:inset-0 flex flex-col items-center justify-center pointer-events-none">        
-        <div class="bg-black/70 rounded-[160px] border-2 px-12 py-10 max-w-4xl text-center" style="border-color: #d4bf6c">
+                <h1 class="hero-title">
+                    Westeros University
+                </h1>
 
-            <h1 class="title-font text-6xl md:text-7xl font-bold leading-none mb-4 text-white tracking-wider">
-                Westeros University
-            </h1>
-            
-            <div class="thick-bar mx-auto"></div>
-            
-            <p class="citazione" style="color: white;">
-                Siete chiamati a scegliere. Ancora una volta.<br>
-                Il destino dell'università dipende da voi.
-            </p>
+                <div class="thick-bar"></div>
 
-            <div class="mt-12 flex flex-wrap justify-center gap-4 pointer-events-auto">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog" class="bg-yellow-200 text-black hover:bg-amber-400 px-10 py-5 rounded-2xl text-2xl font-bold transition">
-                    ISCRIVITI
-                </a>
-                <a href="ambientazione.html#LARP" class="border-2 border-yellow-200 hover:bg-white/10 px-10 py-5 rounded-2xl text-2xl font-bold transition">
-                    Cos'è un LARP?
-                </a>
+                <p class="citazione">
+                    Siete chiamati a scegliere. Ancora una volta.<br>
+                    Il destino dell'università dipende da voi.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDZjjjJGc-BIMCDnu2zp385P65YjC2ROP2S2McKkijLIk-gQ/viewform?usp=dialog"
+                        class="btn-primary">
+                        ISCRIVITI
+                    </a>
+
+                    <a href="ambientazione.html#LARP"
+                        class="btn-secondary">
+                        Cos'è un LARP?
+                    </a>
+
+                </div>
+
+                <p class="contenuto hero-date">
+                    18/07/2026<br>
+                    10:00 - 19:00<br>
+                    SAE Institute Milano
+                </p>
+
             </div>
-            <p class="contenuto" style="color: white; font-size: 30px;">
-                <br>18/07/2026<br>
-                10:00 - 19:00<br>
-                SAE Institute Milano
-            </p>
 
-        </div>
+        </section>
+
+        <a href="confraternite.html" class="section-card confraternite">
+            <img src="img/Confraternite.png" alt="">
+            <span>Confraternite</span>
+        </a>
+
+        <a href="club.html" class="section-card club">
+            <img src="img/Gruppi.png" alt="">
+            <span>Club</span>
+        </a>
+
+        <a href="info.html" class="section-card info">
+            <img src="img/Info_pratiche.png" alt="">
+            <span>Info Pratiche</span>
+        </a>
 
     </div>
 
-</div>
+</main>
 </body>
 <script src="app.js"></script>
 </html>
